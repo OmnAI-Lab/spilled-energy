@@ -1,0 +1,27 @@
+[project]
+name = "spilled-energy"
+version = "0.1.0"
+description = "Energy-based Hallucination detection"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "accelerate>=1.1.0",
+    "bitsandbytes>=0.46.1",
+    "datasets>=4.0.0",
+    "dotenv>=0.9.0",
+    "matplotlib>=3.10.8",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+    "torch>=2.8.0",
+    "transformers>=5.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
