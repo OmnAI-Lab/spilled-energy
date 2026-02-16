@@ -12,7 +12,7 @@ The "Spilled Energy" ($E_\Delta$) measures the violation of this equality.
 
 To define the metric, we look at two specific quantities calculated at adjacent timesteps ($t$ and $t+1$):
 
-#### A. The Logit Energy ($E(x_t)$)
+#### A. The Logit Energy $E(x_t)$
 At step $t$, the model computes logits $f(x)$ for all possible next tokens. The "energy" of the specific token $x_t$ that gets sampled is defined by its logit value (the numerator of the softmax):
 
 $$
@@ -21,7 +21,7 @@ $$
 
 *Note:* This is the energy "predicted" for token $x_t$ before it is fully integrated into the context.
 
-#### B. The Marginal (Free) Energy ($F(x_{<t+1})$)
+#### B. The Marginal (Free) Energy $F(x_{<t+1})$
 At step $t+1$, after the token $x_t$ has been appended to the context, the model computes a new set of logits for the *next* step ($t+1$). The "energy" of this new state (the sequence ending in $x_t$) is the **Free Energy** (or Marginal Energy) of the distribution over the vocabulary $V$:
 
 $$
