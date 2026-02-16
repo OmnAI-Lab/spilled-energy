@@ -1,6 +1,13 @@
+<div align="center">
+
 # Spilled Energy in Large Language Models
 
-## [Adrian Robert Minut](https://github.com/adrianrob1), [Hazem Dewidar](https://github.com/THESHADOW2030), [Iacopo Masi](https://iacopomasi.github.io/)
+### [Adrian Robert Minut](https://github.com/adrianrob1), [Hazem Dewidar](https://github.com/THESHADOW2030), [Iacopo Masi](https://iacopomasi.github.io/)
+
+[![Conference](https://img.shields.io/badge/ICLR-2026-blue?logo=gitbook&logoColor=white)](https://iclr.cc/virtual/2026/poster/10010667)
+
+
+</div>
 
 This repository implements **Spilled Energy**, a method for detecting hallucinations in Large Language Models (LLMs) by analyzing the probability distribution (energy) of generated tokens.
 
