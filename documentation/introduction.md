@@ -15,14 +15,18 @@ To define the metric, we look at two specific quantities calculated at adjacent 
 #### A. The Logit Energy ($E(x_t)$)
 At step $t$, the model computes logits $f(x)$ for all possible next tokens. The "energy" of the specific token $x_t$ that gets sampled is defined by its logit value (the numerator of the softmax):
 
-$$ E(x_t) = \text{Logit}(x_t) $$
+$$
+E(x_t) = \text{Logit}(x_t)
+$$
 
 *Note:* This is the energy "predicted" for token $x_t$ before it is fully integrated into the context.
 
 #### B. The Marginal (Free) Energy ($F(x_{<t+1})$)
 At step $t+1$, after the token $x_t$ has been appended to the context, the model computes a new set of logits for the *next* step ($t+1$). The "energy" of this new state (the sequence ending in $x_t$) is the **Free Energy** (or Marginal Energy) of the distribution over the vocabulary $V$:
 
-$$ F(x_{<t+1}) = \text{LogSumExp}_{v \in V}(\text{Logit}(v)) $$
+$$
+F(x_{\lt t+1}) = \text{LogSumExp}_{v \in V}(\text{Logit}(v))
+$$
 
 *Note:* This is the generic "LogSumExp" of the logits at the new step. It represents the "stability" of the new state.
 
@@ -32,7 +36,9 @@ In a perfectly consistent Energy-Based Model (EBM), the energy of the transition
 
 **Spilled Energy** is the absolute difference between these two values:
 
-$$ E_\Delta = | E(x_t) - F(x_{<t+1}) | $$
+$$
+E_\Delta = | E(x_t) - F(x_{\lt t+1}) |
+$$
 
 ### 3. Interpretation
 
