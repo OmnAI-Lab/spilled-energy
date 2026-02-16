@@ -1,5 +1,7 @@
 # Spilled Energy in Large Language Models
 
+## [Adrian Robert Minut](https://github.com/adrianrob1), [Hazem Dewidar](https://github.com/THESHADOW2030), [Iacopo Masi](https://iacopomasi.github.io/)
+
 This repository implements **Spilled Energy**, a method for detecting hallucinations in Large Language Models (LLMs) by analyzing the probability distribution (energy) of generated tokens.
 
 We reinterpret the final softmax classifier over the vocabulary of Large Language Models (LLM) as an Energy-based Model (EBM), allowing us to decompose the sequence probability chain into multiple interacting EBMs. This approach offers a principled way to measure where "energy spills" during decoding.
