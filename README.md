@@ -62,8 +62,8 @@ The `notebooks/` directory contains interactive examples:
 @inproceedings{
   minut2026spilled,
   title={Spilled Energy in Large Language Models},
-  author={Adrian Robert Minut and Hazem Dewidar and Iacopo Masi},
-  booktitle={The Fourteenth International Conference on Learning Representations},
+  author={Minut, Adrian Robert and Dewidar, Hazem and Masi, Iacopo},
+  booktitle={International Conference on Learning Representations},
   year={2026}
 }
 ```
