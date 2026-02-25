@@ -4,7 +4,10 @@
 
 ### [Adrian Robert Minut](https://github.com/adrianrob1), [Hazem Dewidar](https://github.com/THESHADOW2030), [Iacopo Masi](https://iacopomasi.github.io/)
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Conference](https://img.shields.io/badge/ICLR-2026-blue?logo=gitbook&logoColor=white)](https://iclr.cc/virtual/2026/poster/10010667)
+[![arXiv](https://img.shields.io/badge/arXiv-2602.18671-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.18671)
+
 
 
 </div>
