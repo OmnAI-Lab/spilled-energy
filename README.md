@@ -16,6 +16,8 @@ This repository implements **Spilled Energy**, a method for detecting hallucinat
 
 We reinterpret the final softmax classifier over the vocabulary of Large Language Models (LLM) as an Energy-based Model (EBM), allowing us to decompose the sequence probability chain into multiple interacting EBMs. This approach offers a principled way to measure where "energy spills" during decoding.
 
+![Paper Figure 1 - Spilled Energy example on generated text](media/fig1.png)
+
 ## 📚 Documentation
 
 We have detailed documentation available in the `documentation/` directory:
@@ -70,6 +72,10 @@ The `notebooks/` directory contains interactive examples:
   year={2026}
 }
 ```
+
+## Main Results
+
+![Paper Table 1 - Benchmark results on 9 datasets](media/tab1.png)
 
 ## Abstract
 We reinterpret the final Large Language Model (LLM) softmax classifier as an Energy-Based Model (EBM), decomposing the sequence-to-sequence probability chain into multiple interacting EBMs at inference. This principled approach allows us to track "energy spills" during decoding, which we empirically show correlate with factual errors, biases, and failures.  Similar to Orgad et al. (2025), our method localizes the exact answer token and subsequently tests for hallucinations. Crucially, however, we achieve this without requiring trained probe classifiers or activation ablations. Instead, we introduce two completely training-free metrics derived directly from output logits: **spilled energy**, which captures the discrepancy between energy values across consecutive generation steps that should theoretically match, and **marginalized energy**, which is measurable at a single step. Evaluated on nine benchmarks across state-of-the-art LLMs (including LLaMA, Mistral, and Gemma) and on synthetic algebraic operations (Qwen3), our approach demonstrates robust, competitive hallucination detection and cross-task generalization. Notably, these results hold for both pretrained and instruction-tuned variants without introducing any training overhead.
