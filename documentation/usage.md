@@ -80,7 +80,7 @@ print(f"Spilled Energy (Delta): {delta[0]}")
 ## Interpreting Results
 
 - **High Spilled Energy ($E_\Delta$)**: Indicates a token that is energetically inconsistent with the model's distribution. This is a red flag for potential hallucination.
-- **Aggregation**: Common strategies for scoring a whole sequence include taking the `sum`, `max`, or `mean` of the token-level $E_\Delta$ values. Our benchmarks suggest `sum` or `mean` often work well.
+- **Aggregation**: Common strategies for scoring a whole sequence include taking the `sum`, `min`, `max`, or `mean` of the token-level $E_\Delta$ values. Our benchmarks suggest `min` or `max` often work well depending on whether you measure spilled energy $E_\Delta$ or marginalized energy $E_m$.
 
 ## Running Benchmarks
 See [Scripts documentation](scripts.md) for details on how to run full evaluation benchmarks on datasets like TriviaQA.
